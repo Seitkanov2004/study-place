@@ -1,0 +1,42 @@
+#header {
+    background: rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid #ffffff;
+    backdrop-filter: blur(5px);
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+
+        &--logo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            span {
+                font-weight: 500;
+                font-size: 14.8993px;
+                line-height: 18px;
+
+                color: #FFFFFF;
+
+            }
+        }
+
+
+        &--navbar {
+            width: 26%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            a {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                color: #FFFFFF;
+            }
+        }
+    }
+}
