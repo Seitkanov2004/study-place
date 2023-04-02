@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import Logo from "./../../assets/img/logo.svg"
 import { CiUser } from "react-icons/ci"
 
 
 const Header = () => {
+
+    const [menu, setMenu] = useState(false)
+
     return (
         <div id='header'>
             <div className='container'>
@@ -20,6 +23,11 @@ const Header = () => {
                     </nav>
                     <div className='header--login'>
                         <button className='header--login__btn' > <CiUser className='header--login__btn--icon' />Войти</button>
+                    </div>
+                    <div className='header--menu'>
+                        <div/>
+                        <div/>
+                        <div/>
                     </div>
                 </div>
             </div>

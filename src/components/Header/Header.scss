@@ -2,7 +2,6 @@
     background: rgba(255, 255, 255, 0.05);
     border-bottom: 1px solid #ffffff;
     backdrop-filter: blur(5px);
-    
     .header {
         display: flex;
         justify-content: space-between;
@@ -36,6 +35,11 @@
                 font-size: 16px;
                 line-height: 20px;
                 color: #FFFFFF;
+                transition: .4s;
+
+                &:hover {
+                    border-bottom: 2px solid #FFFFFF;
+                }
             }
         }
 
@@ -55,9 +59,75 @@
                 background: #FFFFFF;
                 border-radius: 0px 10px 10px 10px;
                 border: none;
+
                 &--icon {
                     font-size: 24px;
                     padding-right: 6px;
+                }
+            }
+        }
+
+        &--menu{
+           display: none;
+        }
+    }
+}
+
+
+
+
+@media (max-width:1440px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media (max-width:1024px) {
+    #header {
+        .header {
+            &--logo {
+                img {
+                    width: 30%;
+                }
+            }
+
+            &--navbar {
+                width: 32%;
+            }
+        }
+    }
+}
+
+
+@media (max-width:768px) {
+    #header {
+        .header {
+            &--logo {
+                img {
+                    width: 74%;
+                }
+
+                span {
+                    display: none;
+                }
+            }
+
+            &--navbar {
+                display: none;
+            }
+
+            &--login {
+                display: none;
+            }
+
+            &--menu {
+                display: block;
+                div {
+                    width: 45px;
+                    height: 5px;
+                    background: #FFFFFF;
+                    border-radius: 10px;
+                    margin: 4px 0;
                 }
             }
         }
