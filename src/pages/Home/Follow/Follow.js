@@ -7,7 +7,7 @@ const Follow = () => {
     return (
         <div>
             <div id="follow">
-                <div className="container">
+                <div className=" container">
                     <div className="follow">
                         <div className="follow--book">
                             <img src={Book1} alt="" className="follow--book__book1"/>

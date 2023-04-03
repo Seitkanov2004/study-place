@@ -4,7 +4,7 @@ import Follow from "./Follow/Follow";
 const Home = () => {
     return (
         <div>
-            <Follow/>
+            <Follow />
 
         </div>
     );
