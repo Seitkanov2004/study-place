@@ -20,7 +20,7 @@ const Footer = () => {
                     <div className="footer--logo">
                         <div className="footer--logo__icon">
                             <img src={book} alt="" />
-                            <span>SELF DEVELOPING SCHOOL</span>
+                            <span>SELF  DEVELOPING SCHOOL</span>
                         </div>
                         <div className="footer--logo__language">
                             <button>КГ</button>

@@ -40,7 +40,6 @@ const Header = () => {
                     </div>
                     <div style={{
                         display: menu? "block" : "none",
-                    
                     }}>
                         <div className="header--nav" >
                             <NavLink to={"/"} >Главная</NavLink>
