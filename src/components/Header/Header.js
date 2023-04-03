@@ -48,6 +48,11 @@ const Header = () => {
                             <button className='header--towBtn'><CiUser className='header--towBtn__icon' />Войти</button>
                         </div>
                     </div>
+                    <div className='header--menu'>
+                        <div/>
+                        <div/>
+                        <div/>
+                    </div>
                 </div>
             </div>
         </div>
