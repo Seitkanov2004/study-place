@@ -2,9 +2,12 @@
     background: rgba(255, 255, 255, 0.05);
     border-bottom: 1px solid #ffffff;
     backdrop-filter: blur(5px);
-
+    position: fixed;
+    backdrop-filter: blur(5px);
+    width: 100%;
+    z-index: 999;
     .header {
-        display: flex;
+        display:flex;
         justify-content: space-between;
         align-items: center;
         padding: 20px 0;
