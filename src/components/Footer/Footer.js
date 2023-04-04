@@ -9,11 +9,18 @@ import master from "./../../assets/img/mastercard.svg"
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { Tb123 } from "react-icons/tb";
 import { RiVisaLine } from "react-icons/ri";
+import { useSelector } from 'react-redux';
 
 
 const Footer = () => {
+
+    const use = useSelector(state => state.login)
+
+
     return (
-        <div id="footer">
+        <div style={{
+            display: !use ? "block" : "none"
+        }} id="footer">
             <div className="container">
                 <div className="footer">
                     <div className="footer--footNav">
