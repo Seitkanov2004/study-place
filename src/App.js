@@ -4,6 +4,7 @@ import Footer from "./components/Footer/Footer"
 import Home from "./pages/Home/Home"
 import { useSelector } from "react-redux";
 import Index from "./pages/Login/Index";
+import Books from "./pages/Books/Books";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/login" element={<Index/>}/>
+        <Route path="/books" element={<Books/>}/>
       </Routes>
       <Footer/>
     </div>

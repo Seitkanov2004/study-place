@@ -13,6 +13,14 @@ const Header = () => {
 
     const dispatch = useDispatch()
 
+
+
+    const local =  () => {
+        let log= JSON.parse(localStorage.getItem("login")) || []
+        dispatch({type: "OPEN_LOGIN", payload:log})
+        localStorage.setItem("login", JSON.stringify(true))
+    }
+
     return (
         <div style={{
             display: !modal ? 'block' : 'none'
@@ -34,6 +42,7 @@ const Header = () => {
                             <NavLink to={"/about-us"} >О нас</NavLink>
                         </nav>
                         <NavLink to={"/login"}>
+                            <div onClick={local} className='header--login'>
                             <div onClick={() => dispatch({ type: "OPEN_LOGIN" })} className='header--login'>
                                 <button className='header--login__btn' >
                                     <CiUser className='header--login__btn--icon' />Войти</button>
