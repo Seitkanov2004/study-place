@@ -6,6 +6,7 @@
 @import "./pages/Home/Home.scss";
 @import "./pages/Home/Hero/Hero";
 @import "./pages/Login/Index";
+@import "./pages/Books/Books.scss";
 
 
 ////////////////////////////////////////////////////////////////
@@ -19,10 +20,18 @@
   padding: 0;
 }
 
+html{
+  width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body{
   background: linear-gradient(152.23deg, #D78B59 6.77%, #595FEB 47.79%);
   font-family: 'Montserrat',sans-serif;
-
+  width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 a{

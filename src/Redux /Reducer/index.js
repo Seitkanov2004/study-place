@@ -1,5 +1,5 @@
 const initialState = {
-    login: false,
+    login: JSON.parse(localStorage.getItem('login')),
 }
 
 
@@ -8,7 +8,7 @@ export const Reducer = (state = initialState, action) => {
         case "OPEN_LOGIN":
             return {
                 ...state,
-                login: true
+                login: action.payload
             }
 
         case "CLOSE_LOGIN":
