@@ -1,24 +1,66 @@
-import React from 'react';
-import { NavLink } from'react-router-dom';
+import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import Logo from "./../../assets/img/logo.svg"
+import { CiUser } from "react-icons/ci"
+import { useDispatch, useSelector } from 'react-redux';
 
 
 const Header = () => {
+
+    const [menu, setMenu] = useState(false)      
+
+    const modal = useSelector(state => state.login)
+
+    const dispatch = useDispatch()
+
     return (
-        <div id='header'>
+        <div style={{
+            display: !modal ? 'block' : 'none'
+        }} id='header'>
             <div className='container'>
-                <div className='header'>
-                    <div className='header--logo'>
-                        <img src={Logo} alt='logo'/>
-                        <span>SELF DEVELOPING SCHOOL</span>
+                <div className="header--child">
+                    <div className='header'>
+                        <div className='header--logo'>
+                            <img src={Logo} alt='logo' style={{
+                                width: menu ? "30%" : "88%"
+                            }} />
+                            <span style={{
+                                display: menu ? "block" : "none"
+                            }}>SELF DEVELOPING SCHOOL</span>
+                        </div>
+                        <nav className='header--navbar'>
+                            <NavLink to={"/"} >Главная</NavLink>
+                            <NavLink to={"/our-cours"} >Наши курсы</NavLink>
+                            <NavLink to={"/about-us"} >О нас</NavLink>
+                        </nav>
+                        <NavLink to={"/login"}>
+                            <div onClick={() => dispatch({ type: "OPEN_LOGIN" })} className='header--login'>
+                                <button className='header--login__btn' >
+                                    <CiUser className='header--login__btn--icon' />Войти</button>
+                            </div>
+                        </NavLink>
+                        <div onClick={() => setMenu(!menu)} className='header--menu'>
+                            <div className='header--menu__parentMenu'>
+                                <div className={menu ? "header--menu__parentMenu--one" : ""} />
+                                <div className={menu ? "header--menu__parentMenu--tow" : ""} />
+                                <div className={menu ? "header--menu__parentMenu--three" : ""} />
+                            </div>
+                        </div>
                     </div>
-                    <nav className='header--navbar'>
-                        <NavLink to={"/"} >Главная</NavLink>
-                        <NavLink to={"/"} >Наши курсы</NavLink>
-                        <NavLink to={"/"} >О нас</NavLink>
-                    </nav>
-                    <div className='header--login'>
-                        <button className='header--login__btn' >Войти</button>
+                    <div style={{
+                        display: menu ? "block" : "none",
+                    }}>
+                        <div className="header--nav" >
+                            <NavLink to={"/"} >Главная</NavLink>
+                            <NavLink to={"/"} >Наши курсы</NavLink>
+                            <NavLink to={"/"} >О нас</NavLink>
+                            <button className='header--towBtn'><CiUser className='header--towBtn__icon' />Войти</button>
+                        </div>
+                    </div>
+                    <div className='header--menu'>
+                        <div />
+                        <div />
+                        <div />
                     </div>
                 </div>
             </div>
