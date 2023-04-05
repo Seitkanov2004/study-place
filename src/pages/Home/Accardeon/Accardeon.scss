@@ -1,5 +1,6 @@
 #wrapper {
   .wrapper {
+    padding: 160px 0;
     h1 {
       font-weight: 600;
       font-size: 40px;
@@ -13,7 +14,7 @@
       justify-content: space-between;
 
       &--bookR {
-        margin-left: -70px;
+        margin-left: -7%;
       }
 
       &__title {
@@ -23,52 +24,7 @@
         }
       }
 
-      .item {
-        background: transparent;
-        margin-bottom: 5px;
-        padding: 10px 20px;
-        display: flex;
-        justify-content: space-between;
-        align-items: start;
-        height: 90px;
-        width: 700px;
-        overflow: hidden;
-
-        &--icon {
-          transform: rotate(-90deg);
-          margin-left: 670px;
-          color: #FFFFFF;
-          font-size: 25px;
-        }
-
-        &--title {
-          cursor: pointer;
-          display: flex;
-          flex-direction: column;
-          align-items: start;
-          justify-content: start;
-
-          h4 {
-            padding-bottom: 10px;
-            text-align: left;
-            font-weight: 400;
-            font-size: 32px;
-            line-height: 39px;
-            color: #FFFFFF;
-          }
-
-          p {
-            font-size: 20px;
-            color: white;
-          }
-
-          &__div {
-            width: 700px;
-            height: 1px;
-            background: #FFFFFF;
-          }
-        }
-      }
+    
     }
   }
 }
@@ -105,8 +61,6 @@
 
         .item {
           background: transparent;
-          margin-bottom: 5px;
-          padding: 10px 20px;
           display: flex;
           justify-content: space-between;
           align-items: start;
@@ -116,17 +70,13 @@
 
           &--icon {
             transform: rotate(-90deg);
-            margin-left: 610px;
             color: #FFFFFF;
             font-size: 25px;
           }
 
           &--title {
             cursor: pointer;
-            display: flex;
-            flex-direction: column;
-            align-items: start;
-            justify-content: start;
+    
 
             h4 {
               padding-bottom: 10px;
@@ -199,7 +149,6 @@
 
           &--icon {
             transform: rotate(-90deg);
-            margin-left: 520px;
             color: #FFFFFF;
             font-size: 25px;
           }
@@ -282,7 +231,6 @@
 
           &--icon {
             transform: rotate(-90deg);
-            margin-left: 520px;
             color: #FFFFFF;
             font-size: 25px;
           }
@@ -366,7 +314,6 @@
 
           &--icon {
             transform: rotate(-90deg);
-            margin-left: 440px;
             color: #FFFFFF;
             font-size: 20px;
           }
@@ -452,7 +399,6 @@
 
           &--icon {
             transform: rotate(-90deg);
-            margin-left: 370px;
             color: #FFFFFF;
             font-size: 20px;
           }
@@ -538,7 +484,6 @@
 
           &--icon {
             transform: rotate(-90deg);
-            margin-left: 370px;
             color: #FFFFFF;
             font-size: 20px;
           }
@@ -624,7 +569,6 @@
 
           &--icon {
             transform: rotate(-90deg);
-            margin-left: 330px;
             color: #FFFFFF;
             font-size: 20px;
           }
@@ -710,7 +654,6 @@
 
           &--icon {
             transform: rotate(-90deg);
-            margin-left: 310px;
             color: #FFFFFF;
             font-size: 20px;
           }
@@ -795,7 +738,6 @@
 
           &--icon {
             transform: rotate(-90deg);
-            margin-left: 250px;
             color: #FFFFFF;
             font-size: 20px;
           }

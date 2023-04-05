@@ -9,11 +9,6 @@ const Staty = () => {
     const [books, setBooks] = useState([1, 2, 3])
     const [books1, setBooks1] = useState([1, 2])
 
-const Staty = () => {
-
-    const [books, setBooks] = useState([1,2,3])
-    const [books1, setBooks1] = useState([1,2])
-
     return (
         <div id="books">
             <div className="container">
@@ -44,7 +39,7 @@ const Staty = () => {
                                     </div>
                                     <img src={aboutBook} alt="" />
                                     <div className="books--block__aboutBook--line" />
-                                    <div className="books--block__aboutBook--line"/>
+                                    <div className="books--block__aboutBook--line" />
                                     <div className='books--block__aboutBook--end'>
                                         <h3>Автор: Muslim Bolot</h3>
                                         <h3>Дата: 22.08.22</h3>
@@ -122,7 +117,7 @@ const Staty = () => {
 
                     </div>
                     <NavLink to={"/books"}>
-                    <button className='books--btn'>Показать болшье</button>
+                        <button className='books--btn'>Показать болшье</button>
                     </NavLink>
                     <div className='books--'>
 
@@ -131,6 +126,6 @@ const Staty = () => {
             </div>
         </div>
     );
-};
+}
 
 export default Staty;

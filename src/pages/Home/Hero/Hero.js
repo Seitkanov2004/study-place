@@ -10,22 +10,24 @@ import Book4 from '../../../assets/img/book4.svg'
 const Hero = () => {
     return (
         <div id="hero">
-            <img className="book1" src={Book1} alt="img"/>
-            <img className="book2" src={Book2} alt="img"/>
+            <img className="book1" src={Book1} alt="img" />
+            <img className="book2" src={Book2} alt="img" />
             <div className="container">
                 <div className="hero">
                     <div className="hero--title">
                         <h1>Само развитие лучше чем школьное обучение</h1>
                         <p>Здесь вы найдете все для само-обучения.</p>
-                        <button>Подобрать пакет</button>
+                        <a href="#wrapper">
+                            <button>Подобрать пакет</button>
+                        </a>
                     </div>
                     <div className="hero--img">
-                        <img  src={Book} alt="img"/>
+                        <img src={Book} alt="img" />
                     </div>
                 </div>
             </div>
-            <img className="book3" src={Book3} alt="img"/>
-            <img className="book4" src={Book4} alt="img"/>
+            <img className="book3" src={Book3} alt="img" />
+            <img className="book4" src={Book4} alt="img" />
         </div>
     );
 };

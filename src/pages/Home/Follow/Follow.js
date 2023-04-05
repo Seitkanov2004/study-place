@@ -2,6 +2,7 @@ import React from 'react';
 import "./Follow.scss"
 import Book1 from "./../../../assets/img/logo.svg"
 import { useSelector } from 'react-redux';
+import { NavLink } from 'react-router-dom';
 
 
 const Follow = () => {
@@ -21,7 +22,9 @@ const Follow = () => {
                         </div>
                         <div className="follow--buttons">
                             <button className="follow--buttons__followBtn">Подписаться</button>
-                            <button className="follow--buttons__learnBtn">Узнать больше</button>
+                            <NavLink to={"/learn-more"}>
+                                <button className="follow--buttons__learnBtn">Узнать больше</button>
+                            </NavLink>
                         </div>
                     </div>
                 </div>

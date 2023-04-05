@@ -45,7 +45,7 @@ const Books = () => {
                         </div>
                         <div className='allBooks--block__two'>
                             {
-                                Books.map(el => (
+                                book2.map(el => (
                                     <div className="allBooks--block__two--aboutBooks">
                                         <h1 className="allBooks--block__two--aboutBooks__title">С какой книги начать?</h1>
                                         <div className="allBooks--block__two--aboutBooks__tabs">
@@ -56,12 +56,19 @@ const Books = () => {
                                         </div>
                                         <img src={bookImg} alt="" />
                                         <div className='allBooks--block__two--aboutBooks__line'/>
-                                        <div className="allBooks--block__two--aboutBooks__date"></div>
+                                        <div className="allBooks--block__two--aboutBooks__date">
+                                            <h3>Автор: Muslim Bolot</h3>
+                                            <h3>Дата: 22.08.22</h3>
+                                        </div>
                                     </div>
                                 ))
                             }
                         </div>
                     </div>
+
+                <div >
+
+                </div>
                 </div>
             </div>
         </div>

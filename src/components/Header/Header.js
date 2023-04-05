@@ -43,9 +43,8 @@ const Header = () => {
                         </nav>
                         <NavLink to={"/login"}>
                             <div onClick={local} className='header--login'>
-                            <div onClick={() => dispatch({ type: "OPEN_LOGIN" })} className='header--login'>
                                 <button className='header--login__btn' >
-                                    <CiUser className='header--login__btn--icon' />Войти</button>
+                                <CiUser className='header--login__btn--icon' />Войти</button>
                             </div>
                         </NavLink>
                         <div onClick={() => setMenu(!menu)} className='header--menu'>

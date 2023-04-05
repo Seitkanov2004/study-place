@@ -10,7 +10,6 @@ export const Reducer = (state = initialState, action) => {
             return {
                 ...state,
                 login: action.payload
-                login: true
             }
 
         case "CLOSE_LOGIN":

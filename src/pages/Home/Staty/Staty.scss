@@ -204,9 +204,7 @@
             }
 
         }
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+
 
         &--tabs {
             display: flex;
@@ -228,13 +226,14 @@
 
                 &:hover {
                     background: #fff;
-                &:hover{
-                    background:#fff;
-                    color: #595FEB;
+
+                    &:hover {
+                        background: #fff;
+                        color: #595FEB;
+                    }
                 }
             }
         }
-
         &--block {
             display: flex;
             justify-content: space-between;
